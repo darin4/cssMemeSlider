@@ -6,4 +6,19 @@
 
 body {
   background: url(./images/bckgr-image.jpg) no-repeat center / cover;
+  padding-top: 1rem;
+}
+
+.slider-container {
+  width: 64rem; /*1024px*/
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1rem solid rgba(154, 231, 241, 0.5);
+  box-shadow: 1rem;
+  border-radius: 0.5rem;
 }
