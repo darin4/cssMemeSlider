@@ -8,7 +8,8 @@
 }
 
 body {
-  background: url(./images/bckgr-image.jpg) no-repeat center / cover;
+  background: url(./images/bckgr-image.jpg) repeat;
+  background-size: cover;
   padding-top: 1rem;
 }
 
@@ -111,8 +112,8 @@ input[name="radio"] {
 }
 
 #radio5:checked ~ .slides .s1 {
-    margin-left: -80%;
-  }
+  margin-left: -80%;
+}
 
 #radio1:checked ~ .desc-container .desc .t1 {
   margin-left: 0;
@@ -168,4 +169,34 @@ input[name="radio"] {
 #radio4:checked:hover ~ .nav-panel .nav-circle4,
 #radio5:checked:hover ~ .nav-panel .nav-circle5 {
   background: cyan;
+}
+
+@media screen and (max-width: 640px) {
+    .slider-container {
+        gap: 1rem;
+    }
+
+  .slider {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .slide img {
+    width: 100%;
+   }
+
+  .nav-panel {
+    order: 1;
+    max-width: 100%;
+    justify-content: center;
+    margin-left: 11.25rem;
+  }
+
+  .desc-container {
+    order: 2;
+  }
+
+  .slide {
+    /*max-width: 25rem;*/
+  }
 }
